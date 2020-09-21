@@ -1,0 +1,18 @@
+from array import *
+arr = array('i',[])
+user_input=int(input("Enter the lenght: "))
+
+for i in range(user_input):
+    x = int(input("Enter the value: "))
+    arr.append(x)
+
+val=int(input("Enter Search Value: "))
+ind=0
+for e in arr:
+    if e==val:
+        print(ind)
+        break
+    ind+=1
+
+print(arr.index(val))
+print(arr)
